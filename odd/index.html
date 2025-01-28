@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OneDayDom — Ваш комфортный дом на каждый день</title>
     <!-- Подключение стилей и шрифтов -->
-    <!-- <link rel="stylesheet" href="stylesfull.css" /> -->
-    <link rel="stylesheet" href="steps.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- <link rel="stylesheet" href="steps.css" /> -->
+    <link rel="stylesheet" href="static/styles/steps.css" />
+    <link rel="stylesheet" href="static/styles/styles.css" />
+    <link rel="stylesheet" href="static/styles/working.css" />
+    <link rel="stylesheet" type="text/css" href="static/styles/slick-theme.css"/>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
+
     <!-- Шрифт Montserrat -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
     <!-- AOS для анимаций при скролле -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
   </head>
   <body>
@@ -68,10 +74,129 @@
         </div>
       </section>
 
+      <!-- Преимущества
+      <section id="advantages" class="bg-solid">
+        <div class="section__bg pc" style="background-image: url(bg/working/pc-bg.jpg);"></div>
+        <div class="section__bg xs" style="background-image: url(bg/working/xs-bg.jpg);"></div>
+        <div class="container">
+          <h2>Почему выбирают нас</h2>
+          <div class="cards">
+            <div class="card" data-aos="fade-up">
+              <h3>Бесконтактное заселение</h3>
+              <p>
+                Современные технологии позволяют вам заселиться самостоятельно в
+                любое удобное время без ожидания.
+              </p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+              <h3>Моментальное бронирование</h3>
+              <p>
+                Простая и быстрая система бронирования без лишних формальностей
+                и звонков.
+              </p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+              <h3>Круглосуточная поддержка</h3>
+              <p>
+                Наша команда всегда на связи, чтобы помочь вам по любым вопросам
+                в любое время суток.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="working-section">
+        <div class="section__bg pc" style="background-image: url(static/imgs/bg/working/pc-bg.jpg);"></div>
+        <div class="section__bg xs" style="background-image: url(static/imgs/bg/working/xs-bg.jpg);"></div>
+        <div class="container">
+            <div class="working__title">
+                <div class="working__title__top">
+                    <div class="working__title__top-text">Почему выбирают нас?</div>
+                </div>
+                <div class="working__title__bottom">
+                    <div class="d-title">Наши преимущества <span class="blue">и принципы работы</span></div>
+                </div>
+            </div>
+    
+            <!-- Слайдер -->
+            <div class="working__box slider">
+                <div class="working__box__inner">
+                    <!-- Первый элемент слайдера -->
+                    <div class="working__box__item">
+                        <div class="working__box__item-title">
+                            Бесконтактное,<br>
+                            заселение
+                        </div>
+                        <div class="working__box__item-subtitle">
+                          Современные технологии позволяют вам заселиться самостоятельно в
+                          любое удобное время без ожидания.
+                        </div>
+                    </div>
+                </div>
+                <div class="working__box__inner">
+                    <!-- Второй элемент слайдера -->
+                    <div class="working__box__item">
+                        <div class="working__box__item-title">
+                            Моментальное<br>
+                            бронирование
+                        </div>
+                        <div class="working__box__item-subtitle">
+                          Современная и быстрая система бронирования без лишних формальностей
+                          и звонков.
+                        </div>
+                    </div>
+                </div>
+                <div class="working__box__inner">
+                  <!-- Второй элемент слайдера -->
+                  <div class="working__box__item">
+                      <div class="working__box__item-title">
+                          Круглосуточная<br>
+                          поддержка
+                      </div>
+                      <div class="working__box__item-subtitle">
+                        Наша команда всегда на связи, чтобы помочь вам по любым вопросам
+                        в любое время суток.
+                      </div>
+                  </div>
+              </div>
+              <div class="working__box__inner">
+                <!-- Второй элемент слайдера -->
+                <div class="working__box__item">
+                    <div class="working__box__item-title">
+                      Чистота и<br>безопасность
+                    </div>
+                    <div class="working__box__item-subtitle">
+                      Мы тщательно следим за чистотой и соблюдаем все стандарты безопасности для вашего спокойствия.
+                    </div>
+                </div>
+            </div>
+            <div class="working__box__inner">
+              <!-- Второй элемент слайдера -->
+              <div class="working__box__item">
+                  <div class="working__box__item-title">
+                    Удобное расположение
+                  </div>
+                  <div class="working__box__item-subtitle">
+                    Наши объекты находятся в центральных районах города, рядом с основной городской инфраструктуой и транспортными узлами.
+                  </div>
+              </div>
+          </div>
+            </div>
+    
+            <div class="working__footer">
+                <div class="working__footer-title d-title">Ваш путь у нас прост</div>
+                <div class="working__footer-subtitle">
+                    Ощути весь комфорт легкого бронирования и заселения в 4 простых шага.
+                </div>
+            </div>
+        </div>
+    </section>
+    
       <!-- Как это работает -->
       <section class="steps-section">
-        <div class="section__bg pc" style="background-image: url(gradient.png);"></div>
-        <div class="section__bg xs" style="background-image: url(gradient.png);"></div>
+        <div class="section__bg pc" style="background-image: url(static/imgs/bg/steps/pc-bg.jpg);"></div>
+        <div class="section__bg xs" style="background-image: url(static/imgs/bg/steps/xs-bg.jpg);"></div>
         <div class="steps-container">
             <div class="steps__box">
                 <div class="steps__line"><span class="line"></span></div>
@@ -128,36 +253,6 @@
         </div>
     </section>
     
-
-      <!-- Преимущества -->
-      <section id="advantages" class="bg-solid">
-        <div class="container">
-          <h2>Почему выбирают нас</h2>
-          <div class="cards">
-            <div class="card" data-aos="fade-up">
-              <h3>Бесконтактное заселение</h3>
-              <p>
-                Современные технологии позволяют вам заселиться самостоятельно в
-                любое удобное время без ожидания.
-              </p>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="100">
-              <h3>Моментальное бронирование</h3>
-              <p>
-                Простая и быстрая система бронирования без лишних формальностей
-                и звонков.
-              </p>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="200">
-              <h3>Круглосуточная поддержка</h3>
-              <p>
-                Наша команда всегда на связи, чтобы помочь вам по любым вопросам
-                в любое время суток.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- Услуги -->
       <section id="services">
@@ -286,6 +381,8 @@
     </footer>
 
     <!-- Скрипты -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="slick.js"></script>
     <!-- AOS для анимаций при скролле -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- JavaScript код -->

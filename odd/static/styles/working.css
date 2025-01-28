@@ -1,0 +1,283 @@
+.slick-dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    -moz-column-gap: .5rem;
+    column-gap: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30rem;
+    bottom: -1rem;
+}
+
+.slick-dots li {
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+.slick-dots li button {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    width: 100%;
+    height: .3rem;
+    padding: 0;
+}
+
+.slick-dots li button::before {
+    display: none;
+}
+
+.slick-dots li.slick-active button {
+    background: #0056FD !important;
+}
+
+.working-section .working__box .slick-dots {
+    bottom: -4rem;
+    width: 34rem;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: #000;
+    opacity: 0.7;
+}
+
+.working-section {
+    height: 109.2rem;
+    margin-top: 0rem;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section {
+        height: 65.5rem;
+        background: #000;
+        /* margin-top: 5.4rem; */
+        padding: 0px 0;
+    }
+}
+
+.working-section .working__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8.75rem;
+    margin-bottom: 6.4rem;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__title {
+        padding-top: 4.5rem;
+        margin-bottom: 4.6rem;
+    }
+}
+
+.working-section .working__title__top {
+    border: 0.088rem solid #9da7b2;
+    border-radius: 7.1rem;
+    padding: 1.2rem 2.4rem;
+    width: 22.2rem;
+    background: rgba(0, 91, 228, 0);
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__title__top {
+        width: 19.7rem;
+        padding: 1rem 2.4rem;
+    }
+}
+
+.working-section .working__title__top-text {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    text-align: center;
+    color: #9da7b2;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__title__top-text {
+        font-size: 1.2rem;
+    }
+}
+
+.working-section .working__title__bottom {
+    margin-top: 5.4rem;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__title__bottom {
+        margin-top: 2.4rem;
+    }
+}
+
+.working-section .working__title__bottom .d-title {
+    color: #f6f8fb;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__title__bottom .d-title {
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+}
+
+.working-section .working__title__bottom .d-title .blue {
+    background: linear-gradient(180deg, #06f 0%, rgb(30, 119, 252) 76.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__title__bottom .d-title .blue {
+        background: linear-gradient(180deg, #06f 0%, rgb(30, 119, 252) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+}
+
+.working-section .working__box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 2.8rem 6.3rem;
+    margin: auto;
+    width: 127.5rem;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__box {
+        width: auto;
+        flex-wrap: nowrap;
+        margin: 0 -1.5rem;
+    }
+}
+
+.working-section .working__box .slick-dots {
+    bottom: -4rem;
+    width: 34rem;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__box__inner {
+        padding: 0 2rem;
+    }
+}
+
+.working-section .working__box__item {
+    padding-left: 3.286rem;
+    padding-top: 1.643rem;
+    width: 38.2rem;
+    background: url(../imgs/bg/working/border.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0.6rem;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__box__item {
+        width: 35rem;
+        padding-right: 3.286rem;
+    }
+}
+
+.working-section .working__box__item-title {
+    font-weight: 500;
+    font-size: 2.7rem;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: #fdfdfd;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__box__item-title {
+        font-size: 2.4rem;
+    }
+}
+
+.working-section .working__box__item-subtitle {
+    font-family: "AdspectSansText";
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: #9da7b2;
+    min-height: 17rem;
+    margin-top: 1.643rem;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__box__item-subtitle {
+        font-size: 1.4rem;
+        min-height: 12rem;
+    }
+
+    .working-section .working__box__item-subtitle br {
+        display: none;
+    }
+}
+
+.working-section .working__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20rem;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__footer {
+        margin-top: 8rem;
+    }
+}
+
+.working-section .working__footer-title {
+    color: #f6f8fb;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__footer-title {
+        font-size: 2.6rem;
+    }
+}
+
+.working-section .working__footer-subtitle {
+    font-family: "AdspectSansText";
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 575px) {
+    .working-section .working__footer-subtitle {
+        display: none;
+    }
+}
+
+.working__slider-line {
+    display: none;
+    margin-top: 3.5rem;
+}
+
+@media screen and (max-width: 575px) {
+    .working__slider-line {
+        width: 34.8rem;
+        display: block;
+    }
+}
