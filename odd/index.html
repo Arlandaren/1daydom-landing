@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OneDayDom — Ваш комфортный дом на каждый день</title>
     <!-- Подключение стилей и шрифтов -->
-    <link rel="stylesheet" href="static/styles/steps.css" />
     <link rel="stylesheet" href="static/styles/styles.css" />
+    <link rel="stylesheet" href="static/styles/steps.css" />
     <link rel="stylesheet" href="static/styles/working.css" />
-    <link rel="stylesheet" type="text/css" href="static/styles/slick-theme.css"/>
+    <link rel="stylesheet" href="static/styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="static/styles/vendor/slick-theme.css"/>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
@@ -47,19 +48,27 @@
     <header>
       <div class="container">
         <div class="header-content">
-          <h1>OneDayDom — Комфорт, доступный каждому</h1>
-          <p>Уютные квартиры в любом городе по цене отеля</p>
-          <p>
+          <!-- <h1>OneDayDom</h1> -->
+          <p class="tagline">
+            Нужна квартира в Чите срочно? <br />
+            <span>
+              <span class="highlight">OneDayDom</span> найдёт вам, точно!
+            </span>
+          </p>
+          <p class="features">
             Быстрое онлайн-бронирование • Бесконтактное заселение •
             Круглосуточная поддержка
           </p>
-          <a href="#how-it-works" class="btn">Забронировать сейчас</a>
+          <a id="header-button" class="t-btn pulse" href="https://www.adspect.com/#quiz">
+            <span class="pc">Бронируй онлайн прямо сейчас!!!</span>
+          </a>
           <div class="stats">
             <span>9+ лет на рынке • 3000+ довольных клиентов</span>
           </div>
         </div>
       </div>
     </header>
+
 
     <!-- Основной контент -->
     <main>
@@ -74,37 +83,43 @@
         </div>
       </section>
 
-      <!-- Преимущества
-      <section id="advantages" class="bg-solid">
-        <div class="section__bg pc" style="background-image: url(bg/working/pc-bg.jpg);"></div>
-        <div class="section__bg xs" style="background-image: url(bg/working/xs-bg.jpg);"></div>
+      <!-- Преимущества посуточной аренды -->
+      <section id="benefits" class="bg-blurred" style="background-image: url(static/imgs/bg/);">
         <div class="container">
-          <h2>Почему выбирают нас</h2>
+          <h2>Преимущества посуточной аренды</h2>
+          <p>Узнайте, почему аренда квартиры лучше, чем проживание в отеле.</p>
           <div class="cards">
             <div class="card" data-aos="fade-up">
-              <h3>Бесконтактное заселение</h3>
+              <h3>Экономия средств</h3>
               <p>
-                Современные технологии позволяют вам заселиться самостоятельно в
-                любое удобное время без ожидания.
+                Стоимость аренды квартиры ниже, чем проживание в отеле
+                аналогичного класса.
               </p>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="100">
-              <h3>Моментальное бронирование</h3>
+              <h3>Больше пространства</h3>
               <p>
-                Простая и быстрая система бронирования без лишних формальностей
-                и звонков.
+                Просторные апартаменты с отдельной кухней и всеми необходимыми
+                удобствами.
               </p>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="200">
-              <h3>Круглосуточная поддержка</h3>
+              <h3>Уют и комфорт</h3>
               <p>
-                Наша команда всегда на связи, чтобы помочь вам по любым вопросам
-                в любое время суток.
+                Домашняя атмосфера, где вы можете расслабиться и почувствовать
+                себя как дома.
+              </p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+              <h3>Гибкость</h3>
+              <p>
+                Вы сами выбираете время заезда и выезда, а также дополнительные
+                услуги по своему желанию.
               </p>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="working-section">
         <div class="section__bg pc" style="background-image: url(static/imgs/bg/working/pc-bg.jpg);"></div>
@@ -284,43 +299,7 @@
         </div>
       </section>
 
-      <!-- Преимущества посуточной аренды -->
-      <section id="benefits" class="bg-blurred">
-        <div class="container">
-          <h2>Преимущества посуточной аренды</h2>
-          <p>Узнайте, почему аренда квартиры лучше, чем проживание в отеле.</p>
-          <div class="cards">
-            <div class="card" data-aos="fade-up">
-              <h3>Экономия средств</h3>
-              <p>
-                Стоимость аренды квартиры ниже, чем проживание в отеле
-                аналогичного класса.
-              </p>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="100">
-              <h3>Больше пространства</h3>
-              <p>
-                Просторные апартаменты с отдельной кухней и всеми необходимыми
-                удобствами.
-              </p>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="200">
-              <h3>Уют и комфорт</h3>
-              <p>
-                Домашняя атмосфера, где вы можете расслабиться и почувствовать
-                себя как дома.
-              </p>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="300">
-              <h3>Гибкость</h3>
-              <p>
-                Вы сами выбираете время заезда и выезда, а также дополнительные
-                услуги по своему желанию.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
       <!-- Сотрудничество -->
       <section id="cooperation">
         <div class="container">

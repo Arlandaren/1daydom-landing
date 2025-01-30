@@ -468,7 +468,7 @@ body {
     color: #000;
     font-size: 1.8rem;
     line-height: 1.4;
-    font-family: "AdspectVisualSans";
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     overflow-x: hidden;
 }
@@ -885,7 +885,7 @@ section {
 
 .steps-section .t-btn .btn-subtitle {
     font-size: 1.1rem;
-    font-family: "AdspectSansText";
+    font-family: "Montserrat";
     font-weight: 400;
     color: #D0D0D0;
 }
@@ -964,7 +964,7 @@ section {
 }
 
 .steps__item .text .subtitle {
-    font-family: "AdspectSansText";
+    font-family: "Montserrat";
     font-weight: 400;
 }
 
