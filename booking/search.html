@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бронирование недвижимости в Чите — HomeReserve</title>
+    <!-- Мета-теги для SEO -->
+    <meta name="description" content="Бронируйте недвижимость в Чите с дополнительными возможностями и скидками. Перейдите в наш Telegram бот для лучших предложений!">
+    <meta name="keywords" content="бронирование, недвижимость, Чита, аренда, скидки, Telegram бот">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph данные для социальных сетей -->
+    <meta property="og:title" content="Бронирование недвижимости в Чите — HomeReserve">
+    <meta property="og:description" content="Бронируйте недвижимость в Чите с дополнительными возможностями и скидками через наш Telegram бот!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://example.com/images/preview.jpg">
+    <!-- Twitter Card данные -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Бронирование недвижимости в Чите — HomeReserve">
+    <meta name="twitter:description" content="Бронируйте недвижимость в Чите с дополнительными возможностями и скидками через наш Telegram бот!">
+    <meta name="twitter:image" content="https://example.com/images/preview.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        html, body {
+            height: 100%;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            background-image: url('static/imgs/color_logo.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            image-rendering: pixelated;
+        }
+
+        .content {
+            flex: 1;
+            background-color: rgba(245, 248, 250, 0.9); /* Полупрозрачный фон */
+        }
+
+        .footer {
+            background-color: rgba(245, 248, 250, 0.9); /* Полупрозрачный фон */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .telegram-button {
+            display: inline-block;
+            background-color: #0088cc;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .telegram-button:hover {
+            background-color: #006699;
+        }
+
+        @media (max-width: 600px) {
+            .footer p {
+                font-size: 16px;
+            }
+
+            .telegram-button {
+                font-size: 14px;
+                padding: 10px 16px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <main class="content">
+            <div id="hr-widget"></div>
+            <script type="module" src="https://homereserve.ru/widget.js"></script>
+            <script type="module">
+                window.homereserve.initWidgetSearch({"token":"AAEKnw"})
+            </script>
+        </main>
+        <footer class="footer">
+            <p>Для получения дополнительных возможностей и скидок бронируйте в Telegram боте!</p>
+            <a href="https://t.me/Rent_chita_bot" class="telegram-button" target="_blank" rel="noopener noreferrer">
+                Перейти в Telegram бот
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
