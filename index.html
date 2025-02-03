@@ -6,10 +6,13 @@
     <title>Квартиры посуточно в Чите — снять квартиру посуточно | OneDayDom</title>
     <meta name="description" content="Снять квартиру в Чите посуточно легко с OneDayDom. Лучшие предложения по аренде квартир посуточно в Чите. Бронируйте онлайн и наслаждайтесь комфортом.">
     <!-- Подключение стилей и шрифтов -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="static/styles/styles.css" />
     <link rel="stylesheet" href="static/styles/index/styles.css" />
     <link rel="stylesheet" href="static/styles/index/steps.css" />
     <link rel="stylesheet" href="static/styles/index/working.css" />
     <link rel="stylesheet" href="static/styles/index/header.css" />
+    <link rel="stylesheet" href="static/styles/index/carousel.css" />
     <link rel="stylesheet" type="text/css" href="static/styles/vendor/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Шрифт Montserrat -->
@@ -19,13 +22,16 @@
     <!-- Подключение JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
   </head>
   <body>
 
     <!-- Навигация -->
     <nav id="navbar">
       <div class="container">
-        <a href="#" class="logo">OneDayDom</a>
+        <a href="#" class="logo"><span class="one-day">OneDay</span><span class="dom">Dom</span></a>
         <ul id="nav-menu">
           <li><a href="#advantages">Преимущества</a></li>
           <li><a href="#services">Услуги</a></li>
@@ -79,8 +85,46 @@
             Предлагаем большой выбор современных квартир для посуточной аренды в Чите.
             Чувствуйте себя как дома, где бы вы ни были.
           </p>
+
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-item">
+                <div class="carousel-content">
+                  <!-- Ваш контент для слайда 1 -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-content">
+                  <!-- Ваш контент для слайда 2 -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-content">
+                  <!-- Ваш контент для слайда 3 -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-content">
+                  <!-- Ваш контент для слайда 3 -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-content">
+                  <!-- Ваш контент для слайда 3 -->
+                </div>
+              </div>
+              <!-- Добавьте больше слайдов, если необходимо -->
+            </div>
+          
+            <!-- Навигационные кнопки -->
+            <button class="carousel-nav prev" aria-label="Предыдущий слайд">❮</button>
+            <button class="carousel-nav next" aria-label="Следующий слайд">❯</button>
+          </div>
+
         </div>
       </section>
+
+
       
       <!-- Преимущества посуточной аренды -->
       <section id="benefits" class="bg-blurred">
@@ -109,13 +153,13 @@
                 себя как дома.
               </p>
             </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <!-- <div class="card" data-aos="fade-up" data-aos-delay="300">
               <h3>Гибкость</h3>
               <p>
                 Вы сами выбираете время заезда и выезда, а также дополнительные
                 услуги по своему желанию.
               </p>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -364,7 +408,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- JavaScript код -->
     <script src="static/js/index/script.js"></script>
-    <script src="static/js/index/modal.js"></script>
+    <script src="static/js/index/carousel.js"></script>
+    <script src="static/js/script.js"></script>
     
+    <!-- jQuery, Popper.js и Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   </body>
 </html>

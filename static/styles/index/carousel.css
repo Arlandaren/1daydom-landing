@@ -1,0 +1,134 @@
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Increase max-width for visual expansion */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  /* Wrapper for slides */
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+  }
+  
+  /* Each slide */
+  .carousel-item {
+    flex: 0 0 33.3333%; /* Each slide takes up one-third of the container */
+    max-width: 33.3333%;
+    opacity: 0.5;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    margin: 0 -2%; /* Negative margin to partially show neighboring slides */
+  }
+  
+  /* Active slide */
+  .carousel-item.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2; /* Bring active slide to the front */
+  }
+  
+  /* Neighboring slides */
+  .carousel-item.prev,
+  .carousel-item.next {
+    opacity: 0.7;
+    transform: scale(0.9);
+    z-index: 1;
+  }
+  
+  /* Hide other slides */
+  .carousel-item:not(.active):not(.prev):not(.next) {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Content inside each slide */
+  .carousel-content {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as desired */
+    background-color: #ccc; /* Replace with your background or use background-image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Navigation buttons */
+  .carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .carousel-nav.prev {
+    left: 10px;
+  }
+  
+  .carousel-nav.next {
+    right: 10px;
+  }
+  
+  .carousel-nav:hover {
+    background-color: rgba(255,255,255,0.9);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .carousel-item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+    .carousel-item:not(.active) {
+      display: none;
+    }
+    .carousel-content {
+      height: 300px;
+    }
+    .carousel-nav {
+        font-size: 20px;
+    }
+  }
+  
+  
+/* Пример для первого слайда */
+.carousel-item:nth-child(1) .carousel-content {
+    background-image: url('/static/imgs/bg/header_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    }
+
+    /* Пример для второго слайда */
+    .carousel-item:nth-child(2) .carousel-content {
+    background-image: url('/static/imgs/bg/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    }
+
+    /* Пример для третьего слайда */
+    .carousel-item:nth-child(3) .carousel-content {
+    background-image: url('/static/imgs/logo.png');
+    background-size: cover;
+    background-position: center;
+    }
+    .carousel-item:nth-child(4) .carousel-content {
+        background-image: url('/static/imgs/logo.svg');
+        background-size: cover;
+        background-position: center;
+    }
+    .carousel-item:nth-child(5) .carousel-content {
+        background-image: url('/static/imgs/color_logo.svg');
+        background-size: cover;
+        background-position: center;
+    }
+    

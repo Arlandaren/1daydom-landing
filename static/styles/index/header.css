@@ -1,6 +1,6 @@
 /*Хедер*/
 header {
-  background: url('../imgs/bg/int_bg.jpg') center/cover no-repeat;
+  background: url('/static/imgs/bg/header_bg.jpg') center/cover no-repeat;
   position: relative;
   color: #ffffff; /*Цвет текста - белый для контраста*/
   padding: 255px 0 150px 0;
