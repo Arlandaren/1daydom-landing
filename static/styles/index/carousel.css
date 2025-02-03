@@ -103,31 +103,31 @@
   
 /* Пример для первого слайда */
 .carousel-item:nth-child(1) .carousel-content {
-    background-image: url('/static/imgs/bg/header_bg.jpg');
+    background-image: url('/1daydom-landing/static/imgs/bg/header_bg.jpg');
     background-size: cover;
     background-position: center;
     }
 
     /* Пример для второго слайда */
     .carousel-item:nth-child(2) .carousel-content {
-    background-image: url('/static/imgs/bg/bg.jpg');
+    background-image: url('/1daydom-landing/static/imgs/bg/bg.jpg');
     background-size: cover;
     background-position: center;
     }
 
     /* Пример для третьего слайда */
     .carousel-item:nth-child(3) .carousel-content {
-    background-image: url('/static/imgs/logo.png');
+    background-image: url('/1daydom-landing/static/imgs/logo.png');
     background-size: cover;
     background-position: center;
     }
     .carousel-item:nth-child(4) .carousel-content {
-        background-image: url('/static/imgs/logo.svg');
+        background-image: url('/1daydom-landing/static/imgs/logo.svg');
         background-size: cover;
         background-position: center;
     }
     .carousel-item:nth-child(5) .carousel-content {
-        background-image: url('/static/imgs/color_logo.svg');
+        background-image: url('/1daydom-landing/static/imgs/color_logo.svg');
         background-size: cover;
         background-position: center;
     }
